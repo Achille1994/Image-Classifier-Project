@@ -32,7 +32,13 @@ Now that the data is ready, it's time to build and train the classifier. I shoul
 - Save your trained model as a Keras model.
 - Inference for Classification
 - Write your Algorithm to web app
-# results
-please ,,,
+
+# Building the Command Line Application
+Now that I've built and trained a deep neural network on the flower data set, it's time to convert it into an application that others can use. Your application should be a Python script that run from the command line. For testing, I should use the saved Keras model I saved in the first part.
+The predict.py file that uses a trained network to predict the class for an input image. The predict.py module should predict the top flower names from an image along with their corresponding probabilities.
+
+
+# Results
+Please look my notebook and predict.py file for all details for this project
 
 
