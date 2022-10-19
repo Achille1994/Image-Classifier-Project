@@ -31,6 +31,8 @@ Now that the data is ready, it's time to build and train the classifier. I shoul
 - Plot the loss and accuracy values achieved during training for the training and validation set.
 - Save your trained model as a Keras model.
 - Inference for Classification
--
+- Write your Algorithm to web app
+# results
+please ,,,
 
 
