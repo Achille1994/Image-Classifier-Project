@@ -12,3 +12,9 @@ The project is broken down into multiple steps:
 - Use your trained model to perform inference on flower images.
 - We'll lead you through each part which you'll implement in Python.
 
+### Install Datasets and Upgrade TensorFlow¶
+To ensure we can download the latest version of the oxford_flowers102 dataset, let's first install both tensorflow-datasets and tfds-nightly.
+
+tensorflow-datasets is the stable version that is released on a cadence of every few months
+tfds-nightly is released every day and has the latest version of the datasets
+We'll also upgrade TensorFlow to ensure we have a version that is compatible with the latest version of the dataset.
