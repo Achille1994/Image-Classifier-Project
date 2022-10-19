@@ -52,7 +52,8 @@ For the following examples, we assume we have a file called orchid.jpg in a fold
 
 ### Basic usage:
 - $ python predict.py ./test_images/orchid.jpg my_model.h5
-Options:
+
+* Options:
 
 Return the top 3 most likely classes:
 - $ python predict.py ./test_images/orchid.jpg my_model.h5 --top_k 3
@@ -62,7 +63,7 @@ Use a label_map.json file to map labels to flower names:
 
 ## Images for Testing
 We have provided 4 images in the test_images folder in order to check my predict.py module. 
-The 4 images are:
+* The 4 images are:
 
 - cautleya_spicata.jpg
 - hard-leaved_pocket_orchid.jpg
