@@ -40,22 +40,34 @@ The predict.py file that uses a trained network to predict the class for an inpu
 ### Basic usage:
 $ python predict.py /path/to/image saved_model
 Options:
---top_k : Return the top KK most likely classes:
-$ python predict.py /path/to/image saved_model --top_k KK
---category_names : Path to a JSON file mapping labels to flower names:
-$ python predict.py /path/to/image saved_model --category_names map.json
+
+top_k : Return the top K most likely classes:
+- $ python predict.py /path/to/image saved_model --top_k K
+
+category_names : Path to a JSON file mapping labels to flower names:
+- $ python predict.py /path/to/image saved_model --category_names map.json
 
 ### Examples
-For the following examples, we assume we have a file called orchid.jpg in a folder named/test_images/ that contains the image of a flower. We also assume that we have a Keras model saved in a file named my_model.h5.
+For the following examples, we assume we have a file called orchid.jpg in a folder named test_images that contains the image of a flower. We also assume that we have a Keras model saved in a file named my_model.h5.
 
 ### Basic usage:
-
-$ python predict.py ./test_images/orchid.jpg my_model.h5
+- $ python predict.py ./test_images/orchid.jpg my_model.h5
 Options:
+
 Return the top 3 most likely classes:
-$ python predict.py ./test_images/orchid.jpg my_model.h5 --top_k 3
+- $ python predict.py ./test_images/orchid.jpg my_model.h5 --top_k 3
+
 Use a label_map.json file to map labels to flower names:
-$ python predict.py ./test_images/orchid.jpg my_model.h5 --category_names label_map.json
+- $ python predict.py ./test_images/orchid.jpg my_model.h5 --category_names label_map.json
+
+## Images for Testing
+We have provided 4 images in the test_images folder in order to check my predict.py module. 
+The 4 images are:
+
+- cautleya_spicata.jpg
+- hard-leaved_pocket_orchid.jpg
+- orange_dahlia.jpg
+- wild_pansy.jpg
 
 # Results
 Please look my notebook and predict.py file for all details for this project
