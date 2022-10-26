@@ -39,29 +39,19 @@ Now that the data is ready, it's time to build and train the classifier. I shoul
 Now that I've built and trained a deep neural network on the flower data set, it's time to convert it into an application that others can use. Your application should be a Python script that run from the command line. For testing, I should use the saved Keras model I saved in the first part.
 The predict.py file that uses a trained network to predict the class for an input image. The predict.py module should predict the top flower names from an image along with their corresponding probabilities.
 
-### Basic usage:
-$ python predict.py /path/to/image saved_model
+### Basic usage (run this app):
+$ python predict.py --input /path/to/image --model saved_model --top_k K --category_names map.json
+
 Options:
-
-top_k : Return the top K most likely classes:
-- $ python predict.py /path/to/image saved_model --top_k K
-
-category_names : Path to a JSON file mapping labels to flower names:
-- $ python predict.py /path/to/image saved_model --category_names map.json
+- input : path image
+- top_k : Return the top K most likely classes
+- model : save model
+- category_names : Path to a JSON file mapping labels to flower names:
 
 ### Examples
 For the following examples, we assume we have a file called orchid.jpg in a folder named test_images that contains the image of a flower. We also assume that we have a Keras model saved in a file named my_model.h5.
 
-### Basic usage:
-- $ python predict.py ./test_images/orchid.jpg my_model.h5
-
-* Options:
-
-Return the top 3 most likely classes:
-- $ python predict.py ./test_images/orchid.jpg my_model.h5 --top_k 3
-
-Use a label_map.json file to map labels to flower names:
-- $ python predict.py ./test_images/orchid.jpg my_model.h5 --category_names label_map.json
+- $ python predict.py --input./test_images/orchid.jpg --model my_model.h5 --top_k 3 --category_names label_map.json
 
 ## Images for Testing
 We have provided 4 images in the test_images folder in order to check my predict.py module. 
